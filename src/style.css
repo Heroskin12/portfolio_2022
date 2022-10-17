@@ -5,14 +5,167 @@
     font-style: normal;
   }
 
-  @font-face {
+@font-face {
     font-family: 'sfmono';
     src: url('./assets/SFMonoRegular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  * {
-    font-family: "sfmono", sans-serif;
-  }
+/* Default Configuration */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3 {
+    font-family: 'calibre', sans-serif;
+}
+
+p, li {
+    font-family: 'sfmono', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'sfmono', sans-serif;
+}
+
+/* Utility Classes */
+.pointer:hover {
+    cursor: pointer;
+}
+
+.bg-dark {
+    background-color: #0a192f;
+}
+
+.highlight {
+    color: #52d4b9;
+}
+
+.feature-text, a {
+    color: #ccd6f6;
+}
+
+.sub-text {
+    color: #8892b0;
+}
+
+.p1 {
+    padding: 10px;
+}
+
+.p2 {
+    padding: 20px;
+}
+
+/* Nav CSS */
+
+nav {
+    padding: 20px 50px;
+}
+
+.nav-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #0b1930;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style-type: none;    
+    align-items: center;
+    
+}
+
+.nav-links ul li span {
+    color: #52d4b9;
+    margin-right: 5px;
+}
+
+.nav-links ul li {
+    display: flex;
+    padding-right: 40px;
+}
+
+.nav-links ul li:hover {
+    text-decoration: underline;
+}
+
+/* Body */
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+#hero {
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#hero .text p {
+    font-size: 22px;
+    line-height: 18px;
+    margin: 0 0 60px 4px;
+}
+
+#hero .text h1 {
+    font-size: 100px;
+    line-height: 68px;
+}
+
+#hero .text h2 {
+    font-size: 100px;
+    line-height: 1.1;
+}
+
+#hero .info .social a {
+    font-size: 18px;
+    text-decoration: underline;
+    padding-right: 20px;
+}
+
+#hero .info button {
+    border: 1px solid #52d4b9;
+    color: #52d4b9;
+    background: none;
+    padding: 20px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+#hero .image {
+    justify-content: end;
+    margin-left: 30px;
+}
+#hero .image img {
+    height: 500px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+ 
 

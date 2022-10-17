@@ -6,10 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
-<body>
-    <h1>This is my portfolio!</h1>
-    <p>Here you are going to learn many things about me!</p>
-    <h2>Yayayayayay!</h2>
-    <a href="about.html">Go About</a>
+<body class="bg-dark">
+    <nav>
+        <div class="nav-grid-container">
+            <div class="logo pointer"></div>
+            <div class="nav-links">
+                <ul>
+                    <li class="pointer feature-text"><span class="highlight">01.</span> About</li>
+                    <li class="pointer feature-text"><span class="highlight">02.</span> Projects</li>
+                    <li class="pointer feature-text"><span class="highlight">03.</span> Contact</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="hero">
+            <div class="info">
+                <div class="text">
+                    <p class="highlight">Hi, my name is</p>
+                    <h1 class="feature-text">Jamie Furlong</h1>
+                    <h2 class="sub-text">Front-End Developer</h2>
+                </div>
+                <div class="social">
+                    <a href="">Projects</a>
+                    <a href="">Resume</a>
+                    <a href="https://github.com/Heroskin12">Github</a>
+                    <a href="https://www.linkedin.com/in/jamie-furlong/">LinkedIn</a>
+                </div>
+                <button type="button">Schedule a Call</button>
+            </div>
+            <div class="image"></div>
+        </section>
+    </div>
 </body>
 </html>
