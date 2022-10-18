@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="bg-dark">
@@ -20,24 +21,39 @@
         </div>
     </nav>
 
-    <div class="container">
-        <section id="hero">
-            <div class="info">
-                <div class="text">
-                    <p class="highlight">Hi, my name is</p>
-                    <h1 class="feature-text">Jamie Furlong</h1>
-                    <h2 class="sub-text">Front-End Developer</h2>
-                </div>
-                <div class="social">
-                    <a href="">Projects</a>
-                    <a href="">Resume</a>
-                    <a href="https://github.com/Heroskin12">Github</a>
-                    <a href="https://www.linkedin.com/in/jamie-furlong/">LinkedIn</a>
-                </div>
-                <button type="button">Schedule a Call</button>
+    
+    <section id="hero">
+        <div class="info">
+            <div class="text">
+                <p class="highlight">Hi, my name is</p>
+                <h1 class="feature-text">Jamie Furlong</h1>
+                <h2 class="sub-text">Front-End Developer</h2>
             </div>
-            <div class="image"></div>
-        </section>
-    </div>
+            <div class="social">
+                <a href="">Projects</a>
+                <a href="">Resume</a>
+                <a href="https://github.com/Heroskin12">Github</a>
+                <a href="https://www.linkedin.com/in/jamie-furlong/">LinkedIn</a>
+            </div>
+            <button class="pointer" type="button">Schedule a Call</button>
+            
+            <div class="marquee">
+                <ul class="marquee-content">
+                    <li><i class="devicon-html5-plain"></i></li>
+                    <li><i class="devicon-css3-plain"></i></li>
+                    <li><i class="devicon-javascript-plain"></i></li>
+                    <li><i class="devicon-sass-original"></i></li>
+                    <li><i class="devicon-bootstrap-plain"></i></li>
+                    <li><i class="devicon-python-plain"></i></li>
+                    <li><i class="devicon-sqlite-plain"></i></li>
+                    <li><i class="devicon-flask-original"></i></li>
+                    <li><i class="devicon-wordpress-plain"></i></li>
+                </ul>
+            
+                
+            </div>
+        </div>
+        <div class="image"></div>
+    </section>
 </body>
 </html>

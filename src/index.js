@@ -1,4 +1,5 @@
 import './style.css'
+import './mobile.css'
 import sun from './sun.svg'
 import logo from './WWWLogo.svg'
 import me from './me.jpg'

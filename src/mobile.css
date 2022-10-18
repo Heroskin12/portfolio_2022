@@ -1,0 +1,36 @@
+@media screen and (max-width:1650px) {
+    #hero .image {
+        display: none;
+    }
+
+    #hero {
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    #hero {
+        max-width: 100%;
+        padding-left: 5%;
+    }    
+}
+
+@media screen and (max-width:750px) {
+    #hero .text p  {
+        margin: 0 0 40px 4px;
+    }
+
+    .marquee {
+        width: 30rem;
+        padding-right: 0;
+    }
+
+    .marquee-content {
+        gap: 10rem;
+    }
+
+    @keyframes scrolling {
+        0% {transform: translateX(28rem);}
+        100% {transform: translateX(-105%);}
+    }
+}
