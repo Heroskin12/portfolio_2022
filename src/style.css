@@ -60,6 +60,11 @@ a {
     padding: 20px;
 }
 
+.flexMenu {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Nav CSS */
 
 nav {
@@ -132,14 +137,14 @@ nav {
 }
 
 #hero .text h1 {
-    font-size: clamp(1rem + 5vw, 1rem + 10vw, 7rem);
+    font-size: 6rem;
     line-height: 68px;
     white-space: nowrap;
     margin-bottom: 20px;
 }
 
 #hero .text h2 {
-    font-size: clamp(1rem + 4vw, 1rem + 8vw, 7rem);
+    font-size: 6rem;
     line-height: 1.1;
     white-space: nowrap;
 }
@@ -156,7 +161,7 @@ nav {
     padding: 20px;
     font-size: 18px;
     margin-top: 40px;
-    margin-bottom: 40px;
+    
 }
 
 #hero .image {
@@ -178,14 +183,15 @@ nav {
     overflow: hidden;
     width: 40rem;
     display: flex;
-    border-bottom: #8892b0;
+    border-bottom: 1px solid #8892b0;
 }
 
 .marquee-content {
     display: flex;
     list-style-type: none;
     gap: 10rem;
-    animation: 30s scrolling infinite linear;  
+    animation: 30s scrolling infinite linear; 
+    border-bottom:#8892b0; 
 }
 
 .marquee:before, .marquee:after {
@@ -218,6 +224,116 @@ nav {
     0% {transform: translateX(40rem);}
     100% {transform: translateX(-105%);}
 }
+
+/* About */
+#about, #project {
+    margin-top: 70px;
+    position: relative;    
+    width: 100%;
+}
+
+#about .line, #project .line {
+    color: #ccd6f6;
+    font-size: 24px;
+}
+
+#about .line span, #project .line span {
+    color:#52d4b9;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.about-wrapper {
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about .about-wrapper p {
+    color: #ccd6f6;
+    padding: 30px;
+    font-size: 18px;
+}
+
+#about .about-wrapper img {
+    width: 50%;    
+}
+
+/* Project */
+.project-container {
+    max-width: 80%;
+    margin: 60px auto;
+    padding: 30px;
+    position: relative;
+}
+
+
+.meta {
+    display: flex;
+    
+}
+
+.meta .date {
+    font-size: 12px;
+    padding:10px;
+    background: #0b1930;
+    color:#52d4b9;
+}
+
+.meta .category {
+    font-size: 12px;
+    padding: 10px;
+    background:#8892b0;
+    margin-left: 15px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 0;
+    column-gap: 10px;
+}
+
+.project-grid h1 {
+    font-size: 60px;
+    color: #ccd6f6;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: #ccd6f6;
+}
+
+.project-info p {
+    font-family: 'calibre', sans-serif;
+    font-size: 22px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+.buttons .demo {
+    padding: 10px;
+    background: #0b1930;
+    color: #52d4b9;
+    font-size: 16px;
+    border: none;
+}
+
+.buttons .repo {
+    background:#8892b0;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+
+
+
 
 
 
