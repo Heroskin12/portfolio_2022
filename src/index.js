@@ -11,7 +11,6 @@ const sunIm = new Image();
 const logoIm = new Image();
 const meIm = new Image();
 const jamieIm = new Image();
-const marioIm = new Image();
 
 sunIm.src = sun;
 console.log(sunIm);
@@ -31,7 +30,20 @@ jamieIm.src = jamie;
 const aboutWrapper = document.querySelector('.about-wrapper');
 aboutWrapper.appendChild(jamieIm);
 
-marioIm.src = mario;
+
 const projectContainer = document.querySelector('.project-container');
 projectContainer.style.background = `linear-gradient(0deg, rgba(0, 0, 0, .7),  rgba(0, 0, 0, .7)), url(${mario}) no-repeat center center/cover`;
+
+
+const projectContainer2 = document.querySelector('.project-container-2');
+projectContainer2.style.background = `linear-gradient(0deg, rgba(0, 0, 0, .7),  rgba(0, 0, 0, .7)), url(${mario}) no-repeat center center/cover`;
+
+const projectContainer3 = document.querySelector('.project-container-3');
+projectContainer3.style.background = `linear-gradient(0deg, rgba(0, 0, 0, .7),  rgba(0, 0, 0, .7)), url(${mario}) no-repeat center center/cover`;
+
+const project = document.querySelectorAll('.project');
+const projectArray = Array.from(project)
+for (let i = 0; i < projectArray.length; i++) {
+    projectArray[i].style.background = `linear-gradient(0deg, rgba(0, 0, 0, .7),  rgba(0, 0, 0, .7)), url(${mario}) no-repeat center center/cover`;
+}
 

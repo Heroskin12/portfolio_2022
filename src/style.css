@@ -232,12 +232,16 @@ nav {
     width: 100%;
 }
 
-#about .line, #project .line {
+#about {
+    padding-top: 50px;
+}
+
+.line {
     color: #ccd6f6;
     font-size: 24px;
 }
 
-#about .line span, #project .line span {
+.line span {
     color:#52d4b9;
     font-size: 20px;
     padding-right: 30px;
@@ -260,6 +264,10 @@ nav {
 }
 
 /* Project */
+
+#project {
+    padding-top: 50px;
+}
 .project-container {
     max-width: 80%;
     margin: 60px auto;
@@ -309,7 +317,7 @@ nav {
 
 .project-info p {
     font-family: 'calibre', sans-serif;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .buttons {
@@ -329,6 +337,98 @@ nav {
     padding: 10px;
     font-size: 16px;
     border: none;
+}
+
+/* Project Grid */
+
+.refit-project-grid {
+    padding: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 15px;
+}
+
+.project {
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.project h1 {
+    font-size: 30px;
+    line-height: .9;
+    padding-bottom: 20px;
+    color:#ccd6f6;
+}
+
+.project-buttons .project-demo {
+    border: 1px solid #52d4b9;
+    color: #52d4b9;
+    background: none;
+    padding: 10px;
+    font-family: 'sfmono';
+    font-size: 18px;
+}
+
+.project-buttons .project-repo {
+    border:none;
+    color:#0b1930;
+    background:#52d4b9;
+    padding: 10px;
+    font-family: 'sfmono';
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+/* Contact Page */ 
+#contact {
+    margin: auto;
+    padding-top: 50px;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    color: white;
+    margin: auto;
+    padding-top: 50px;
+    max-width: 80%;
+    
+}
+
+.contact-info {
+    padding: 30px;
+    justify-self: end;
+}
+
+.contact-form {
+    padding: 30px;
+    width: 100%;
+}
+
+form input, form textarea {
+    padding: 20px 15px;
+    border: 1px solid #52d4b9;
+    outline: none;    
+    background: none;
+    color: #8892b0;
+    width: 100%;
+    font-size: 18px;
+}
+
+form div:nth-child(2), form div:last-child {
+    margin-top: 20px;
+}
+
+.contact-info h1 {
+    font-size: 50px;
+}
+
+.contact-info p {
+    color: #8892b0;
 }
 
 
