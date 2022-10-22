@@ -13,6 +13,7 @@ import admin from './admin.png'
 import reading from './reading.png'
 import credit from './credit.png'
 import coffee from './coffee.jpg'
+import CV from './CV.pdf'
 
 
 console.log(sun);
