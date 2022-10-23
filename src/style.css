@@ -18,10 +18,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    max-width: 100%;
-    margin: auto;
+    width: 100vw;
 }
 
 html{ scroll-behavior:smooth }
@@ -48,7 +46,7 @@ span {
 
 /* Responsive Configuration */
 h1 {
-    font-size: calc(1rem + 3vw);
+    font-size: calc(1rem + 4vw);
 }
 
 h2 {
@@ -197,24 +195,31 @@ nav {
 
 #hero {
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 70px;  
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width:80%;
-    align-items: center;
-    overflow: hidden; 
-    gap: 50px; 
+    gap: 10px;
+    width: 80%;
+    padding: 30px;
+    min-height: 100vh;
 }
 
 /* To be made responsive */
+
+
 #hero .text p {
     line-height: 18px;
-    margin: 0 0 60px 4px;
+    margin: 0 0 30px 4px;
 }
-
 /* To be made responsive */
 #hero .text h1 {
     white-space: nowrap;
+}
+
+.bio { display: none;}
+
+.social {
+    line-height: 2;
 }
 
 /* Move the Underline down slightly? */
@@ -235,9 +240,8 @@ nav {
 
 /* Make Disappear Sooner */
 #hero .image {
-    display: flex;
-    justify-content: center;
-    align-items: start;
+   align-self: start;
+   margin-left: 50px;
 }
 #hero .image img {
     max-width: 100%;    
