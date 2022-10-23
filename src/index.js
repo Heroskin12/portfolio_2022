@@ -42,6 +42,7 @@ pictureSection.appendChild(meIm);
 
 // About Me Image
 jamieIm.src = coffee;
+jamieIm.classList.add('about-im');
 const aboutWrapper = document.querySelector('.about-wrapper');
 aboutWrapper.appendChild(jamieIm);
 
