@@ -18,8 +18,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    width: 100vw;
+
+body {    
+    min-width: 1150px;    
 }
 
 html{ scroll-behavior:smooth }
@@ -46,15 +47,15 @@ span {
 
 /* Responsive Configuration */
 h1 {
-    font-size: calc(1rem + 4vw);
+    font-size: calc(1rem + 5vw);
 }
 
 h2 {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1rem + 2vw);
 }
 
-p, span {
-    font-size: calc(1rem + 0.2vw);
+p {
+    font-size: calc(1rem + 0.5vw);
     line-height: calc(1.4rem + 0.6vw);
 }
 
@@ -170,6 +171,9 @@ nav {
     margin-right: 40px;
     position: relative;
     padding-bottom: 5px;
+    display: flex;
+    font-size: calc(1rem + 0.2vw);
+    white-space: nowrap;
 }
 
 .nav-links ul li:after {
@@ -195,13 +199,13 @@ nav {
 
 #hero {
     margin: 0 auto;
-    margin-top: 70px;  
+    text-align: left;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    width: 80%;
-    padding: 30px;
-    min-height: 100vh;
+    max-width: 80%;
+    min-height: 90vh;
+    align-items: center;
 }
 
 /* To be made responsive */
@@ -240,7 +244,7 @@ nav {
 
 /* Make Disappear Sooner */
 #hero .image {
-   align-self: start;
+   align-self: center;
    margin-left: 50px;
 }
 #hero .image img {
@@ -300,7 +304,7 @@ nav {
 #about, #project {
     margin: 0 auto;
     margin-top: 70px;  
-    max-width: 100%;
+    width: 100%;
 }
 
 #about {
@@ -343,6 +347,7 @@ nav {
 .project-grid {
     display: grid;
     justify-content: center;
+    width: 100%;
 }
 
 /* To be made responsive */
